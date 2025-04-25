@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(wheat 75%, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.id {
+    background-color: white;
+    width: 385px;
+    height: fit-content;
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    transition: 750ms;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.id:hover {
+    scale: 1.05;
+    background-color: #faedd8;
+}
+
+img {
+    width: 300px;
+    border-radius: 50%;
+    transition: 750ms ease;
+}
+
+img:hover {
+    width: 350px;
+    box-shadow: 0 0 10px black;
+}
+
+.content {
+    margin: 30px 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 750ms;
+    color: black;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #be8e35;
+    font-size: 20px;
+}
+
+h1 {
+    transition: 650ms;
+}
+
+h1:hover {
+    color: #be8e35;
+    font-size: 36px;
+}
+
+::selection {
+    color: white;
+    background: #be8e35;
+}
+
+@media (max-width: 400px) {
+    .id {
+        width: 90%;
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    img:hover {
+        width: 100%;
+    }
+}
+#cnt{
+    text-decoration: none;
+    transition: 750ms;
+    color: black;
+    display: inline-block;
+    margin: 5px 0;
+}
+#cnt:hover{
+    color: #be8e35;
+    font-size: 17px;
+}
